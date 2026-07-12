@@ -7,9 +7,9 @@
 - Parent ecosystem: LawAidAI — the orchestration layer that will eventually coordinate independent workstations; LawAidAI is the parent, not the project. The wider environment is BizTech Wellness AI / AdrianTRUFiT governed development; the governed Notion workspace sits under the parent page "SoulHubⓈ"
 - Human owner and consequence authority: Adrian TRUFiT McKenzie (workspace shell names "Adrian" as final authority)
 - Current status: Existing project requiring continuation or recovery
-- Date of extraction: 2026-07-12 (revised same day on explicit human direction)
+- Date of extraction: 2026-07-12 (revised same day on explicit human direction; initialization completed same day)
 
-Status basis: project-creation intake is partially complete. The extraction is committed in a dedicated GitHub repository, and a dedicated Notion governed workspace has been duplicated and renamed, but the workspace's Source Register and Project Control Center still contain only template placeholder records, the extraction file has not been registered in the Source Register, and no application code or runtime exists anywhere in the dedicated repository.
+Status basis: initialization was completed on 2026-07-12. The extraction is committed in the repository of record and registered in the Notion Source Register; the Project Control Center is populated; `governance/MISSION.md` carries the locked mission and North Star. No application code or runtime exists anywhere in the repository, and the first build work order has not been created or authorized.
 
 Identity rule (explicit human decision, this session): the project is the Evidence Intake Workstation — one workstation with one job. It is not LawAidAI, not a litigation operating system, not a legal-research product, and not an autonomous legal adviser. Every processor that works on this project receives a bounded workstation mission, never an ecosystem mission.
 
@@ -497,18 +497,18 @@ Processors may not make final legal conclusions. Every processor receives the bo
 
 ## 11. Existing Assets and Source Material
 
-### AdrianTRUFiT/Evidence-Intake-Worstation (dedicated project repository)
+### AdrianTRUFiT/Evidence-Intake-Workstation (dedicated project repository)
 
 - Asset type: GitHub repository
-- Known location: https://github.com/AdrianTRUFiT/Evidence-Intake-Worstation
+- Known location: https://github.com/AdrianTRUFiT/Evidence-Intake-Workstation
 - Purpose: Dedicated governed project repository, initialized from the universal governed project template; holds this extraction at `intake/SESSION_EXTRACTION.md`
 - Verification status: VERIFIED REPOSITORY — LOCATION KNOWN (inspected directly in this session)
-- Relevance: Current home of the project's intake record. Contents at extraction time: `README.md` (template title "universal-governed-project-template"), `START_HERE.md` (bootstrap placeholder), `bootstrap.txt` (bootstrap marker), `governance/AUTHORITY_MODEL.md`, `governance/MISSION.md` (unfilled placeholder), `intake/SESSION_EXTRACTION.md`. Note: the repository name is misspelled "Worstation" (missing "k"). No application code is present.
+- Relevance: Sole implementation and governance repository of record (explicit human decision, 2026-07-12). Contents at initialization: `README.md` (repository-of-record statement), `START_HERE.md`, `bootstrap.txt`, `governance/AUTHORITY_MODEL.md`, `governance/MISSION.md` (locked mission and North Star), `intake/SESSION_EXTRACTION.md`. The rename from the original misspelled name "Evidence-Intake-Worstation" was decided by explicit human decision; executing the rename is a GitHub-settings action by the owner, after which old URLs redirect automatically. No application code is present.
 
 ### Committed source extraction record
 
 - Asset type: Project-truth document (originally titled "SESSION EXTRACTION — LAWAIDAI EVIDENCE INTAKE WORKSTATION")
-- Known location: `intake/SESSION_EXTRACTION.md` in AdrianTRUFiT/Evidence-Intake-Worstation (superseded in place by this revision; prior versions remain in git history at commits `f808e80` and `2c8a4e9`)
+- Known location: `intake/SESSION_EXTRACTION.md` in AdrianTRUFiT/Evidence-Intake-Workstation (superseded in place by this revision; prior versions remain in git history at commits `f808e80` and `2c8a4e9`)
 - Purpose: Governing record of the originating strategy session — decisions, capabilities, constraints, acceptance criteria
 - Verification status: VERIFIED ARTIFACT — LOCATION KNOWN (read directly in this session)
 - Relevance: Primary source for the project truth carried into this document. Its LawAidAI-first identity framing is superseded by this session's explicit identity decision.
@@ -519,7 +519,7 @@ Processors may not make final legal conclusions. Every processor receives the bo
 - Known location: https://app.notion.com/p/39bfbe4423dd80a5a886de5b5626b9b2 (under parent page "SoulHubⓈ")
 - Purpose: The project's governance environment — Control Center, Source Register, Decision/HOLD Ledger, Architecture Register, Work Orders, Processor Registry, Activation Packets, Proof Records, Handoffs, Assets, Context Index. Division of authority (human-accepted, this session): GitHub owns implementation; Notion owns governance; the session extraction connects the two.
 - Verification status: VERIFIED ARTIFACT — LOCATION KNOWN (inspected directly in this session)
-- Relevance: Duplicated and renamed for this project, but every Control Center record still carries Status "Template" with placeholder values, and the Source Register contains only template rows — the GitHub extraction file has not been registered. Initialization is incomplete.
+- Relevance: Duplicated and renamed for this project. On 2026-07-12 the Source Register was populated (extraction registered, repository of record recorded) and the Project Control Center records were filled and marked Current. Initialization is complete; the workspace now awaits the first authorized work order.
 
 ### Universal Project Foundry Knowledge Base
 
@@ -535,7 +535,7 @@ Processors may not make final legal conclusions. Every processor receives the bo
 - Known location: https://github.com/AdrianTRUFiT/my-lawaid-ai
 - Purpose: Per the source extraction record, the intended permanent source repository for a fresh LawAidAI build
 - Verification status: VERIFIED REPOSITORY — LOCATION KNOWN (per the committed source extraction record; not re-inspected in this session)
-- Relevance: The source record directed the v1.0 build into this repository. This session's workstation-architecture decision (independent workstations, bounded missions) points instead toward the dedicated workstation repository; explicit human confirmation of the code repository of record is still required (see Section 16). my-lawaid-ai remains a parent-ecosystem asset.
+- Relevance: Parent LawAidAI orchestration repository (explicit human decision, 2026-07-12). It must not contain the Evidence Intake Workstation's implementation truth. The source record's earlier direction to build v1.0 inside this repository is superseded.
 
 ### AdrianTRUFiT/universal-governed-project-template
 
@@ -597,7 +597,7 @@ Processors may not make final legal conclusions. Every processor receives the bo
 
 ### Confirmed Existing Artifacts
 
-- Dedicated GitHub repository AdrianTRUFiT/Evidence-Intake-Worstation, initialized from the universal governed project template, containing bootstrap/governance placeholders and this extraction (`intake/SESSION_EXTRACTION.md`), with branches `main` and `claude/session-extraction-instructions-qvfjfr`
+- Dedicated GitHub repository AdrianTRUFiT/Evidence-Intake-Workstation, initialized from the universal governed project template, containing bootstrap/governance placeholders and this extraction (`intake/SESSION_EXTRACTION.md`), with branches `main` and `claude/session-extraction-instructions-qvfjfr`
 - Dedicated Notion workspace "Evidence Intake Workstation — Governed Project Workspace" containing the operating scripts (00 START HERE, 01 Onboarding, 02 Repository Bootstrap, 03 Check-Out and Handoff, 05 Universal Session Extraction Prompt) and eleven governance databases (Project Control Center, Source Register, Decision/Governance/HOLD Ledger, Architecture and Requirements Register, Build Phases and Work Orders, Team and Processor Registry, Worker Activation Packets, Runtime/Tests/Proof Records, Handoffs and Closure Records, Assets and Output Routing, Context Index)
 - The committed source extraction record documenting the originating strategy session (per that record: verified my-lawaid-ai repository and README, LawAidAI Operating Environment PDF deck, universal governed project template repository, AI Studio interface screenshots, and session-developed Proof Object / intake / repository / search / workflow specifications)
 
@@ -610,6 +610,8 @@ Decided directly in this session:
 - The North Star (Section above) is the permanent acceptance philosophy for every feature.
 - The architecture is independent workstations, each with one job, orchestrated by LawAidAI.
 - GitHub owns implementation; Notion owns governance; the session extraction connects the two.
+- AdrianTRUFiT/Evidence-Intake-Workstation is the sole implementation and governance repository of record; AdrianTRUFiT/my-lawaid-ai is the parent LawAidAI orchestration repository and must not contain the workstation's implementation truth.
+- The repository is renamed from "Evidence-Intake-Worstation" to "Evidence-Intake-Workstation" (corrected spelling).
 
 Carried from the committed source extraction record:
 
@@ -665,16 +667,12 @@ No dedicated working and verified runtime was established in this session.
 
 ### Incomplete or Defective
 
-- The dedicated repository name is misspelled "Evidence-Intake-Worstation" (missing "k"), inconsistent with the project name used everywhere else.
-- `governance/MISSION.md` in the dedicated repository is an unfilled template placeholder. The one-sentence mission decided in this session is the natural content for it, pending initialization.
-- The Notion workspace's Project Control Center records all carry Status "Template" with placeholder values; the Source Register contains only template rows; the GitHub extraction file is not registered in the Source Register — the START HERE initialization sequence is unfinished.
+- The GitHub repository rename to "Evidence-Intake-Workstation" is decided but awaits execution in the repository's GitHub settings by the owner; until executed, live GitHub URLs still resolve under the original misspelled name.
+- `main` still carries a pre-revision extraction; the authoritative extraction lives on branch `claude/session-extraction-instructions-qvfjfr` pending merge.
 - Per the source record: earlier prototypes contained synthetic case data; some relied on browser-local persistence; simulated Gmail fallback records were identified as an evidence-contamination risk; some interfaces overstated authentication, immutability, readiness, or legal confidence; intake has not been proven against a real 25-file mixed set and ZIP archive; search and preserved-source reopening have not been proven end to end; AI Studio project/repository synchronization is uncertain.
 
 ### Missing
 
-- Human confirmation of the code repository of record (see Section 16)
-- Registration of the GitHub extraction file in the Notion Source Register
-- Populated Project Control Center (identity, mission, current state, repository state, runtime state, next action)
 - Confirmed local evidence-storage root
 - Confirmed laptop and home-base path alignment
 - Working extraction libraries
@@ -738,6 +736,18 @@ No dedicated working and verified runtime was established in this session.
 - Authority status: HUMAN-ACCEPTED REFINEMENT (this session)
 - Replaced or corrected: Maintaining parallel, separately edited project records
 - Consequence: `intake/SESSION_EXTRACTION.md` in GitHub is the single authoritative extraction; Notion links to it and tracks its status.
+
+#### Decision: AdrianTRUFiT/Evidence-Intake-Workstation is the sole repository of record
+
+- Authority status: EXPLICIT HUMAN DECISION (this session)
+- Replaced or corrected: The source record's direction to build v1.0 inside AdrianTRUFiT/my-lawaid-ai; my-lawaid-ai remains the parent LawAidAI orchestration repository and must not contain the workstation's implementation truth
+- Consequence: All implementation code, configuration, tests, documentation, and governance records for this workstation live in the dedicated repository; the repository split-brain contradiction is closed.
+
+#### Decision: Rename the repository to the corrected spelling
+
+- Authority status: EXPLICIT HUMAN DECISION (this session)
+- Replaced or corrected: The misspelled repository name "Evidence-Intake-Worstation"
+- Consequence: All project records reference AdrianTRUFiT/Evidence-Intake-Workstation; the rename itself is executed in GitHub repository settings, after which GitHub redirects old URLs automatically.
 
 ### Decisions carried from the committed source extraction record
 
@@ -845,7 +855,7 @@ No dedicated working and verified runtime was established in this session.
 
 ### Platform use and governed-process boundaries
 
-- Dedicated governed repository: AdrianTRUFiT/Evidence-Intake-Worstation (extraction record and governance shell).
+- Repository of record: AdrianTRUFiT/Evidence-Intake-Workstation — the sole implementation and governance repository for this workstation (explicit human decision, 2026-07-12). AdrianTRUFiT/my-lawaid-ai is the parent LawAidAI orchestration repository and must not contain this workstation's implementation truth.
 - GitHub owns implementation; Notion owns governance; the session extraction connects the two. Two separately edited full copies of the extraction must not be maintained.
 - Per the workspace's START HERE rule: after the extraction is saved in GitHub and registered in Notion, stop — do not create a work order, assign a processor, or begin the build until authorized.
 - Fable 5 may build the application only after authorization.
@@ -934,8 +944,6 @@ The workstation becomes the trusted factual input layer for the other workstatio
 
 ### Unknowns
 
-- Final confirmation of the code repository of record (see Contradictions)
-- Whether the misspelled repository name "Evidence-Intake-Worstation" should be renamed or kept
 - Exact local root path for the production evidence store
 - Whether the first operational build will run on the laptop, home-base desktop, or both
 - Whether the dedicated repository should receive the full universal template contents (its current files are minimal bootstrap placeholders)
@@ -951,24 +959,20 @@ The workstation becomes the trusted factual input layer for the other workstatio
 
 ### Contradictions
 
-1. Repository of record: the committed source extraction directed the v1.0 build inside AdrianTRUFiT/my-lawaid-ai, while the project-creation flow created the dedicated repository AdrianTRUFiT/Evidence-Intake-Worstation. This session's workstation-architecture decision (each workstation built, tested, and verified independently) points toward the dedicated workstation repository, but the human has not explicitly named the code repository of record, so this is recorded rather than silently resolved.
-2. Gmail: earlier discussion treated Gmail as the most important communication backbone, while the bounded first build must not allow Gmail to delay local intake. Resolution recorded for initialization: local intake is required; Gmail remains candidate or parallel work only.
-3. Proof Object scope: earlier concepts described every artifact as a Proof Object; later corrections distinguished people, findings, deadlines, and issues from Proof Objects. Current rule: source artifacts become Proof Objects; abstract concepts do not.
-4. Hash meaning: earlier prototypes described hashes as immutability or authentication. Current rule: SHA-256 is an integrity checkpoint only.
-5. Intake reasoning: earlier prototypes included automated legal mapping during ingestion. Current rule: intake may suggest factual classifications but must not make final legal conclusions.
-6. Build scope: earlier direction asked AI Studio to build the complete system from A to Z. Superseded twice — first by narrowing to Evidence Intake v1.0, then by this session's identity decision that the project is one workstation, full stop.
+1. Gmail: earlier discussion treated Gmail as the most important communication backbone, while the bounded first build must not allow Gmail to delay local intake. Resolution recorded for initialization: local intake is required; Gmail remains candidate or parallel work only.
+2. Proof Object scope: earlier concepts described every artifact as a Proof Object; later corrections distinguished people, findings, deadlines, and issues from Proof Objects. Current rule: source artifacts become Proof Objects; abstract concepts do not.
+3. Hash meaning: earlier prototypes described hashes as immutability or authentication. Current rule: SHA-256 is an integrity checkpoint only.
+4. Intake reasoning: earlier prototypes included automated legal mapping during ingestion. Current rule: intake may suggest factual classifications but must not make final legal conclusions.
+5. Build scope: earlier direction asked AI Studio to build the complete system from A to Z. Superseded twice — first by narrowing to Evidence Intake v1.0, then by this session's identity decision that the project is one workstation, full stop.
 
-Resolved this session (recorded for the ledger): the naming contradiction between "LawAidAI Evidence Intake Workstation" and "Evidence Intake Workstation" was resolved by explicit human decision in favor of "Evidence Intake Workstation".
+Resolved this session (recorded for the ledger): (1) the naming contradiction between "LawAidAI Evidence Intake Workstation" and "Evidence Intake Workstation" was resolved by explicit human decision in favor of "Evidence Intake Workstation"; (2) the repository-of-record contradiction was resolved by explicit human decision — AdrianTRUFiT/Evidence-Intake-Workstation is the sole implementation and governance repository of record, and AdrianTRUFiT/my-lawaid-ai remains the parent orchestration repository, which must not contain the workstation's implementation truth.
 
 ### Human Decisions Required Before Initialization
 
-Completing the remaining initialization steps (registering the extraction in the Notion Source Register and populating the Project Control Center) requires no new decision. Before the first build work order is authorized, the human must confirm:
-
-- The code repository of record: AdrianTRUFiT/Evidence-Intake-Worstation (consistent with the workstation-architecture decision) or AdrianTRUFiT/my-lawaid-ai (as stated in the source record).
+None. The repository of record and the repository rename were resolved by explicit human decision on 2026-07-12, and initialization has been completed.
 
 ### Human Decisions That Can Wait Until Build Planning
 
-- Repository rename to correct the "Worstation" spelling
 - Exact local evidence-storage path
 - Exact frontend visual reuse
 - Gmail inclusion timing
@@ -986,7 +990,7 @@ Completing the remaining initialization steps (registering the extraction in the
 2. Confidential-evidence exposure — actual case evidence could be placed in a GitHub repository or transmitted into an inappropriate cloud environment.
 3. False completeness — a polished UI could be accepted without real persistence, extraction, search, and original-source retrieval.
 4. Source/provenance loss — derived text could replace originals, repository/source identity could be lost, or unsupported files, ZIP nesting, duplicates, and extraction failures could disappear silently and undermine trust in the inventory ("nothing is lost" is the mission's hardest guarantee).
-5. Governed-record split-brain — with two candidate repositories (Evidence-Intake-Worstation and my-lawaid-ai) and an unregistered Notion workspace, project truth could fork across locations, defeating the round-trip-integrity and no-rediscovery doctrine.
+5. Governed-record drift — project truth could fork if implementation lands outside the repository of record or the Notion registration stops tracking the GitHub file; the repository-of-record decision and the single-copy rule exist to prevent this.
 
 ---
 
@@ -1070,7 +1074,7 @@ Adrian no longer needs to rely primarily on memory, Gmail browsing, or scattered
 
 ## 19. Recommended First Build Objective
 
-Build and verify Evidence Intake Workstation v1.0 — mission: import every case document into one governed repository where every source is preserved, every file is searchable, and nothing is lost — inside the repository the human confirms as the code repository of record (see Section 16), implemented as one complete local workflow for mixed-file and ZIP acquisition, source preservation, SHA-256 integrity checkpoints, supported text extraction, durable Proof Object registration, review and classification, repository browsing, universal search, and original-source retrieval, meeting the twenty acceptance criteria in Section 18 and answering the six North Star questions.
+Build and verify Evidence Intake Workstation v1.0 — mission: import every case document into one governed repository where every source is preserved, every file is searchable, and nothing is lost — inside AdrianTRUFiT/Evidence-Intake-Workstation, the confirmed repository of record, implemented as one complete local workflow for mixed-file and ZIP acquisition, source preservation, SHA-256 integrity checkpoints, supported text extraction, durable Proof Object registration, review and classification, repository browsing, universal search, and original-source retrieval, meeting the twenty acceptance criteria in Section 18 and answering the six North Star questions.
 
 Do not expand the first build beyond this objective. Do not expand any processor's mission from workstation to ecosystem.
 
@@ -1080,7 +1084,7 @@ Do not expand the first build beyond this objective. Do not expand any processor
 
 ### Main session materials used
 
-- The committed source extraction record at `intake/SESSION_EXTRACTION.md` in AdrianTRUFiT/Evidence-Intake-Worstation, which documents the originating strategy session covering operating doctrine, pro se litigation-preparation needs, Florida family-law context, evidence preservation, Gmail as communication history, Proof Objects, perspective/source repositories, AI Studio prototypes, the universal governed template, Fable 5 build capability, PatternEchoAI sequencing, financial-case focus, courtroom retrieval, binder coordination, and the urgent need for document intake
+- The committed source extraction record at `intake/SESSION_EXTRACTION.md` in AdrianTRUFiT/Evidence-Intake-Workstation, which documents the originating strategy session covering operating doctrine, pro se litigation-preparation needs, Florida family-law context, evidence preservation, Gmail as communication history, Proof Objects, perspective/source repositories, AI Studio prototypes, the universal governed template, Fable 5 build capability, PatternEchoAI sequencing, financial-case focus, courtroom retrieval, binder coordination, and the urgent need for document intake
 - Direct inspection of the dedicated GitHub repository (file tree, git history, branch state)
 - Direct inspection of the Notion workspace "Evidence Intake Workstation — Governed Project Workspace" (shell page, START HERE initialization script, Project Control Center records, Source Register rows)
 - The Universal Session-to-Build Extraction Instruction supplied in this session and embedded in the workspace
@@ -1095,6 +1099,8 @@ From this session directly:
 - The North Star is the permanent acceptance philosophy.
 - The architecture is independent workstations, each with one job, orchestrated by LawAidAI.
 - GitHub owns implementation; Notion owns governance; the session extraction connects the two.
+- AdrianTRUFiT/Evidence-Intake-Workstation is the sole repository of record; my-lawaid-ai remains the parent orchestration repository and must not contain the workstation's implementation truth.
+- The repository is renamed to the corrected spelling "Evidence-Intake-Workstation".
 
 Carried from the source record:
 
@@ -1125,7 +1131,6 @@ Carried from the source record:
 
 ### Areas where session history was insufficient
 
-- Explicit confirmation of the code repository of record
 - Exact local environment (machine, paths, evidence-storage root) for the first operational build
 
 ---
@@ -1135,7 +1140,7 @@ Carried from the source record:
 Project name: Evidence Intake Workstation
 
 Recommended repository name: evidence-intake-workstation
-(the existing dedicated repository is AdrianTRUFiT/Evidence-Intake-Worstation, which contains a spelling error; renaming is a human decision)
+(the repository of record is AdrianTRUFiT/Evidence-Intake-Workstation — corrected spelling decided by explicit human decision; executing the rename in GitHub settings is the one outstanding mechanical step)
 
 Recommended Notion workspace name: Evidence Intake Workstation — Governed Project Workspace
 (already exists at https://app.notion.com/p/39bfbe4423dd80a5a886de5b5626b9b2)
@@ -1147,12 +1152,12 @@ Extraction status: READY FOR PROJECT INITIALIZATION
 Strategy status: SUFFICIENT WITH MARKED UNKNOWNS
 
 Human authorization status: EXPLICITLY AUTHORIZED
-(the intake build was authorized in the source record; in this session the human directly set the project identity, one-sentence mission, and North Star, and accepted this extraction as the authoritative initialization document. The first build work order itself remains unauthorized, per the workspace's stop rule.)
+(the intake build was authorized in the source record; in this session the human directly set the project identity, one-sentence mission, and North Star, resolved the repository of record and repository rename, and accepted this extraction as the authoritative initialization document. The first build work order itself remains unauthorized, per the workspace's stop rule.)
 
-Existing dedicated repository: Yes — AdrianTRUFiT/Evidence-Intake-Worstation (governance and intake record only; no application code)
+Existing dedicated repository: Yes — AdrianTRUFiT/Evidence-Intake-Workstation, the sole implementation and governance repository of record (governance and intake record only; no application code)
 
 Existing dedicated runtime: No verified dedicated runtime
 
-Primary unresolved decision: Explicit confirmation of the code repository of record (the workstation-architecture decision points to the dedicated repository; the source record named my-lawaid-ai), followed by the exact local evidence-storage root
+Primary unresolved decision: Exact local evidence-storage root and first-run environment (laptop, home-base desktop, or both)
 
-Recommended next action: Complete the unfinished START HERE initialization steps — register the GitHub link to `intake/SESSION_EXTRACTION.md` in the Notion Source Register, populate the Project Control Center (identity, one-sentence mission, North Star, current state, repository state, runtime state, next action), fill `governance/MISSION.md` with the one-sentence mission, and obtain the human's repository-of-record confirmation — then stop, per the workspace rule, until the first bounded work order for Evidence Intake Workstation v1.0 is authorized.
+Recommended next action: Initialization is complete. Await Adrian's authorization of the first bounded build work order for Evidence Intake Workstation v1.0; create nothing and implement nothing before that authorization. The one outstanding mechanical step is executing the repository rename in GitHub settings.
