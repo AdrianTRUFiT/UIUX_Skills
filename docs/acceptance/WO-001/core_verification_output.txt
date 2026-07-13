@@ -1,0 +1,20 @@
+PASS — fresh live-mode registry starts empty
+PASS — synthetic corpus holds at least 25 mixed files (27 files)
+PASS — all items imported in one governed batch (27)
+PASS — ZIP preserved and expanded (archive + 2 new members)
+PASS — duplicate ZIP member attached to existing Proof Object
+PASS — every original preserved on disk with matching SHA-256 (30 records)
+PASS — one durable Proof Object per unique source
+PASS — all records placed in the Review Queue
+PASS — every record traces to an operator import batch
+PASS — re-import detected as duplicate, no new record
+PASS — phrase search over extracted content (3 email hits)
+PASS — person search (3 hits)
+PASS — date-range search on detected dates
+PASS — filename search isolates the record
+PASS — search result reopens its preserved original, bytes intact
+PASS — processing-error report lists the unsupported file
+PASS — unsupported file preserved, never lost
+PASS — restart persistence: registry intact on reconnect (30 records)
+PASS — restart persistence: search index intact
+CORE VERIFICATION: ALL 19 CHECKS PASSED

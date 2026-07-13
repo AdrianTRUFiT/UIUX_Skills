@@ -1,0 +1,383 @@
+{
+  "checks": [
+    "PASS — fresh live-mode registry starts empty",
+    "PASS — synthetic corpus holds at least 25 mixed files (27 files)",
+    "PASS — all items imported in one governed batch (27)",
+    "PASS — ZIP preserved and expanded (archive + 2 new members)",
+    "PASS — duplicate ZIP member attached to existing Proof Object",
+    "PASS — every original preserved on disk with matching SHA-256 (30 records)",
+    "PASS — one durable Proof Object per unique source",
+    "PASS — all records placed in the Review Queue",
+    "PASS — every record traces to an operator import batch",
+    "PASS — re-import detected as duplicate, no new record",
+    "PASS — phrase search over extracted content (3 email hits)",
+    "PASS — person search (3 hits)",
+    "PASS — date-range search on detected dates",
+    "PASS — filename search isolates the record",
+    "PASS — search result reopens its preserved original, bytes intact",
+    "PASS — processing-error report lists the unsupported file",
+    "PASS — unsupported file preserved, never lost",
+    "PASS — restart persistence: registry intact on reconnect (30 records)",
+    "PASS — restart persistence: search index intact"
+  ],
+  "import_manifest": {
+    "batch_id": 1,
+    "total_items": 27,
+    "imported_count": 27,
+    "duplicate_count": 0,
+    "error_count": 0,
+    "unsupported_count": 7,
+    "imported": [
+      {
+        "po_id": "PO-000001-140b0139",
+        "filename": "synthetic-letter-01.pdf",
+        "sha256": "140b0139197ac022ed60714b754657b06586798274659604be4259399ad9c94d",
+        "extraction_status": "failed",
+        "repository": "Unassigned"
+      },
+      {
+        "po_id": "PO-000002-67726ccb",
+        "filename": "synthetic-letter-02.pdf",
+        "sha256": "67726ccb17d86021018cffcd859bfdcb47145dacd6d1b3dac15520135fa501fc",
+        "extraction_status": "failed",
+        "repository": "Unassigned"
+      },
+      {
+        "po_id": "PO-000003-e40f281b",
+        "filename": "synthetic-letter-03.pdf",
+        "sha256": "e40f281bf7268a5b6af22b03190f628c067d0b7c1d09dab5eed0ff2a9985ee82",
+        "extraction_status": "failed",
+        "repository": "Unassigned"
+      },
+      {
+        "po_id": "PO-000004-11241bc6",
+        "filename": "synthetic-letter-04.pdf",
+        "sha256": "11241bc69249c707a384d3b2c2681e0e8bfd5d2662a59eb693f6e55df5c437b5",
+        "extraction_status": "failed",
+        "repository": "Unassigned"
+      },
+      {
+        "po_id": "PO-000005-0a42ddd9",
+        "filename": "synthetic-letter-05.pdf",
+        "sha256": "0a42ddd947ee6a35ad133be9b8730f930ceb1e692794b5cf9b602ea56c03067d",
+        "extraction_status": "failed",
+        "repository": "Unassigned"
+      },
+      {
+        "po_id": "PO-000006-a7c6b61d",
+        "filename": "synthetic-letter-06.pdf",
+        "sha256": "a7c6b61de0a387be7f363c5b43200889e104c062799d9d2ab4d3f7a679d4f855",
+        "extraction_status": "failed",
+        "repository": "Unassigned"
+      },
+      {
+        "po_id": "PO-000007-58e17ece",
+        "filename": "synthetic-memo-01.docx",
+        "sha256": "58e17ecee976892480778a78d026b425af634fdd20a78c3ce0472a721e3e2c38",
+        "extraction_status": "extracted",
+        "repository": "Unassigned"
+      },
+      {
+        "po_id": "PO-000008-0ae916b9",
+        "filename": "synthetic-memo-02.docx",
+        "sha256": "0ae916b9d546b201965a5ed3672d093278e820f7ee0d353ad4df36dfa2c8bf37",
+        "extraction_status": "extracted",
+        "repository": "Unassigned"
+      },
+      {
+        "po_id": "PO-000009-52e5f9c7",
+        "filename": "synthetic-memo-03.docx",
+        "sha256": "52e5f9c7aff34d230c600ee206dfdd3a5498e1aab83873a34ba99c092150a582",
+        "extraction_status": "extracted",
+        "repository": "Unassigned"
+      },
+      {
+        "po_id": "PO-000010-f1ecb0f0",
+        "filename": "synthetic-memo-04.docx",
+        "sha256": "f1ecb0f091b4662823859545e73100e1c58b2360e5d893faffa40f85fc244312",
+        "extraction_status": "extracted",
+        "repository": "Unassigned"
+      },
+      {
+        "po_id": "PO-000011-3f22a5a9",
+        "filename": "synthetic-memo-05.docx",
+        "sha256": "3f22a5a97fc882a4cb365f11722962cea1632c9a1bbbc43abee80f6fb076e799",
+        "extraction_status": "extracted",
+        "repository": "Unassigned"
+      },
+      {
+        "po_id": "PO-000012-e1096035",
+        "filename": "synthetic-note-01.txt",
+        "sha256": "e1096035e0c9a21be15167819f4c78bb1153daf03dd33b9c4b6f870433fd9ef9",
+        "extraction_status": "extracted",
+        "repository": "Unassigned"
+      },
+      {
+        "po_id": "PO-000013-5f40d164",
+        "filename": "synthetic-note-02.txt",
+        "sha256": "5f40d1649bd9e0e137c8e2f19b385a139e2c9b1593a61c5d75a7cbede4d75f0d",
+        "extraction_status": "extracted",
+        "repository": "Unassigned"
+      },
+      {
+        "po_id": "PO-000014-44a4c48d",
+        "filename": "synthetic-note-03.txt",
+        "sha256": "44a4c48d1ed59e1b3e40d7d30db2e0ac59fbc58af8835d4cd9d151e845443b73",
+        "extraction_status": "extracted",
+        "repository": "Unassigned"
+      },
+      {
+        "po_id": "PO-000015-1d2cd4ca",
+        "filename": "synthetic-note-04.txt",
+        "sha256": "1d2cd4ca09b929b3a12bca7d06ad9c97fa780a88afa69d6919f64038c09a3689",
+        "extraction_status": "extracted",
+        "repository": "Unassigned"
+      },
+      {
+        "po_id": "PO-000016-3fbcb1d6",
+        "filename": "synthetic-ledger-01.csv",
+        "sha256": "3fbcb1d677e2ecd31ce4f31d646e65ace7bfd4bc8928f6252398017bbe02f77c",
+        "extraction_status": "extracted",
+        "repository": "Unassigned"
+      },
+      {
+        "po_id": "PO-000017-4b74bd66",
+        "filename": "synthetic-ledger-02.csv",
+        "sha256": "4b74bd66a9a8d950fa1daa76c8c96ad18c2b1dd1eb9b13584ab91490b380f658",
+        "extraction_status": "extracted",
+        "repository": "Unassigned"
+      },
+      {
+        "po_id": "PO-000018-e2ef6afe",
+        "filename": "synthetic-accounts-01.xlsx",
+        "sha256": "e2ef6afead1e070bab7ffbc941922acd94436d68fb7e1cd3ff39518d48bd8909",
+        "extraction_status": "extracted",
+        "repository": "Unassigned"
+      },
+      {
+        "po_id": "PO-000019-15850f21",
+        "filename": "synthetic-accounts-02.xlsx",
+        "sha256": "15850f21ddd25bd14002831bc919a349e1cd6625124ce6079c3dc8b404a52beb",
+        "extraction_status": "extracted",
+        "repository": "Unassigned"
+      },
+      {
+        "po_id": "PO-000020-e32c2d3f",
+        "filename": "synthetic-mail-01.eml",
+        "sha256": "e32c2d3f437a10aa826b781524fe8d56767344e196c4f41d92a40b4dd9befdba",
+        "extraction_status": "extracted",
+        "repository": "Unassigned"
+      },
+      {
+        "po_id": "PO-000021-dd4188c0",
+        "filename": "synthetic-mail-02.eml",
+        "sha256": "dd4188c0739b3f9b78d4cecf2798c5003eb362fa408529ede191533018200abb",
+        "extraction_status": "extracted",
+        "repository": "Unassigned"
+      },
+      {
+        "po_id": "PO-000022-390bdf5b",
+        "filename": "synthetic-mail-03.eml",
+        "sha256": "390bdf5bfc96b81d3541e67ac278cd13a5ac202fb0b98c7f97ede600307236a1",
+        "extraction_status": "extracted",
+        "repository": "Unassigned"
+      },
+      {
+        "po_id": "PO-000023-eaa4a94e",
+        "filename": "synthetic-photo-01.png",
+        "sha256": "eaa4a94ea300e0d2c775968cbe42f0b5b51ceafdeb73d64e9efddf6d4e880865",
+        "extraction_status": "registered",
+        "repository": "Unassigned"
+      },
+      {
+        "po_id": "PO-000024-49e2523a",
+        "filename": "synthetic-photo-02.jpg",
+        "sha256": "49e2523a8b012c1083c8b0048afc13ef8d35a896a28fa8619896246531ad1ed7",
+        "extraction_status": "registered",
+        "repository": "Unassigned"
+      },
+      {
+        "po_id": "PO-000025-e8c03eba",
+        "filename": "synthetic-scan-01.tiff",
+        "sha256": "e8c03eba096e4b5c8f6beeebe7dc4a8c81aafd43a352ba674015562b39f3f281",
+        "extraction_status": "registered",
+        "repository": "Unassigned"
+      },
+      {
+        "po_id": "PO-000026-d44c0303",
+        "filename": "synthetic-photo-03.png",
+        "sha256": "d44c0303173ecdb8ba72a7ab688f020583b31865537e2f9ab57e56aeec687807",
+        "extraction_status": "registered",
+        "repository": "Unassigned"
+      },
+      {
+        "po_id": "PO-000027-21bc5abc",
+        "filename": "synthetic-unknown-01.xyz",
+        "sha256": "21bc5abcc968fd549574209126a6563094e2463aad574535a3c35b09552ff3ed",
+        "extraction_status": "unsupported",
+        "repository": "Unassigned"
+      }
+    ],
+    "duplicates": [],
+    "errors": [],
+    "unsupported": [
+      {
+        "po_id": "PO-000001-140b0139",
+        "filename": "synthetic-letter-01.pdf",
+        "sha256": "140b0139197ac022ed60714b754657b06586798274659604be4259399ad9c94d",
+        "extraction_status": "failed",
+        "repository": "Unassigned"
+      },
+      {
+        "po_id": "PO-000002-67726ccb",
+        "filename": "synthetic-letter-02.pdf",
+        "sha256": "67726ccb17d86021018cffcd859bfdcb47145dacd6d1b3dac15520135fa501fc",
+        "extraction_status": "failed",
+        "repository": "Unassigned"
+      },
+      {
+        "po_id": "PO-000003-e40f281b",
+        "filename": "synthetic-letter-03.pdf",
+        "sha256": "e40f281bf7268a5b6af22b03190f628c067d0b7c1d09dab5eed0ff2a9985ee82",
+        "extraction_status": "failed",
+        "repository": "Unassigned"
+      },
+      {
+        "po_id": "PO-000004-11241bc6",
+        "filename": "synthetic-letter-04.pdf",
+        "sha256": "11241bc69249c707a384d3b2c2681e0e8bfd5d2662a59eb693f6e55df5c437b5",
+        "extraction_status": "failed",
+        "repository": "Unassigned"
+      },
+      {
+        "po_id": "PO-000005-0a42ddd9",
+        "filename": "synthetic-letter-05.pdf",
+        "sha256": "0a42ddd947ee6a35ad133be9b8730f930ceb1e692794b5cf9b602ea56c03067d",
+        "extraction_status": "failed",
+        "repository": "Unassigned"
+      },
+      {
+        "po_id": "PO-000006-a7c6b61d",
+        "filename": "synthetic-letter-06.pdf",
+        "sha256": "a7c6b61de0a387be7f363c5b43200889e104c062799d9d2ab4d3f7a679d4f855",
+        "extraction_status": "failed",
+        "repository": "Unassigned"
+      },
+      {
+        "po_id": "PO-000027-21bc5abc",
+        "filename": "synthetic-unknown-01.xyz",
+        "sha256": "21bc5abcc968fd549574209126a6563094e2463aad574535a3c35b09552ff3ed",
+        "extraction_status": "unsupported",
+        "repository": "Unassigned"
+      }
+    ]
+  },
+  "zip_manifest": {
+    "batch_id": 2,
+    "total_items": 4,
+    "imported_count": 3,
+    "duplicate_count": 1,
+    "error_count": 0,
+    "unsupported_count": 1,
+    "imported": [
+      {
+        "po_id": "PO-000028-3584e189",
+        "filename": "synthetic-production-01.zip",
+        "sha256": "3584e1892fb009bf62b7bb87243618302eb43ccdc7bb1572b5740dd5665539a1",
+        "extraction_status": "registered",
+        "repository": "Opposing"
+      },
+      {
+        "po_id": "PO-000029-141af141",
+        "filename": "zip-doc-01.pdf",
+        "sha256": "141af1419eb4f7f146bfc52bd10116dc351bac02faa45134344c9b619c6b1292",
+        "extraction_status": "failed",
+        "repository": "Opposing"
+      },
+      {
+        "po_id": "PO-000030-db7ab7d2",
+        "filename": "zip-note-01.txt",
+        "sha256": "db7ab7d2786f3c5219fb7eb8eb5889dcd9334625021b53014bf53961a3adfc8c",
+        "extraction_status": "extracted",
+        "repository": "Opposing"
+      }
+    ],
+    "duplicates": [
+      {
+        "filename": "duplicate-of-letter-01.pdf",
+        "source_path": "synthetic-production-01.zip!/production/duplicate-of-letter-01.pdf",
+        "duplicate_of": "PO-000001-140b0139",
+        "sha256": "140b0139197ac022ed60714b754657b06586798274659604be4259399ad9c94d"
+      }
+    ],
+    "errors": [],
+    "unsupported": [
+      {
+        "po_id": "PO-000029-141af141",
+        "filename": "zip-doc-01.pdf",
+        "sha256": "141af1419eb4f7f146bfc52bd10116dc351bac02faa45134344c9b619c6b1292",
+        "extraction_status": "failed",
+        "repository": "Opposing"
+      }
+    ]
+  },
+  "duplicate_occurrences": 2,
+  "search_phrase": [
+    "synthetic-mail-03.eml",
+    "synthetic-mail-02.eml",
+    "synthetic-mail-01.eml"
+  ],
+  "retrieval": {
+    "query": "saffron docket",
+    "po_id": "PO-000030-db7ab7d2",
+    "path": "zip-note-01.txt"
+  },
+  "error_report": [
+    {
+      "filename": "synthetic-letter-01.pdf",
+      "stage": "extraction",
+      "message": "RuntimeError: no PDF extractor available: pypdf is not installed and pdftotext was not found"
+    },
+    {
+      "filename": "synthetic-letter-02.pdf",
+      "stage": "extraction",
+      "message": "RuntimeError: no PDF extractor available: pypdf is not installed and pdftotext was not found"
+    },
+    {
+      "filename": "synthetic-letter-03.pdf",
+      "stage": "extraction",
+      "message": "RuntimeError: no PDF extractor available: pypdf is not installed and pdftotext was not found"
+    },
+    {
+      "filename": "synthetic-letter-04.pdf",
+      "stage": "extraction",
+      "message": "RuntimeError: no PDF extractor available: pypdf is not installed and pdftotext was not found"
+    },
+    {
+      "filename": "synthetic-letter-05.pdf",
+      "stage": "extraction",
+      "message": "RuntimeError: no PDF extractor available: pypdf is not installed and pdftotext was not found"
+    },
+    {
+      "filename": "synthetic-letter-06.pdf",
+      "stage": "extraction",
+      "message": "RuntimeError: no PDF extractor available: pypdf is not installed and pdftotext was not found"
+    },
+    {
+      "filename": "synthetic-unknown-01.xyz",
+      "stage": "extraction",
+      "message": "unsupported file type '.xyz': preserved without text extraction"
+    },
+    {
+      "filename": "zip-doc-01.pdf",
+      "stage": "extraction",
+      "message": "RuntimeError: no PDF extractor available: pypdf is not installed and pdftotext was not found"
+    }
+  ],
+  "extraction_statuses": {
+    "extracted": 17,
+    "failed": 7,
+    "registered": 5,
+    "unsupported": 1
+  }
+}
