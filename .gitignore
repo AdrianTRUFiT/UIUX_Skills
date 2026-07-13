@@ -1,0 +1,20 @@
+# Evidence safety: preserved originals and the registry never enter GitHub.
+EvidenceIntakeWorkstation/
+eiw-data/
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Node / frontend build
+node_modules/
+frontend/dist/
+
+# Runtime
+.run/
