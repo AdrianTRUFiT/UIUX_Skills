@@ -30,15 +30,20 @@ Create a new cloud session after changing the environment. Resuming an old sessi
 
 ## B. Install from the current development branch
 
-Until PR #3 is approved and merged, open the target application repository in Claude Code cloud and run:
+Until PR #3 is approved and merged, open the target application repository in Claude Code cloud and ask Claude to run these shell commands:
+
+```bash
+claude plugin marketplace add AdrianTRUFiT/UIUX_Skills@claude/dynamic-web-builder-v1 --scope project
+claude plugin install dynamic-web-builder@trufit-builders --scope project
+```
+
+Then run this Claude Code command:
 
 ```text
-/plugin marketplace add https://github.com/AdrianTRUFiT/UIUX_Skills.git#claude/dynamic-web-builder-v1
-/plugin install dynamic-web-builder@trufit-builders --scope project
 /reload-plugins
 ```
 
-Then invoke:
+Invoke the builder with:
 
 ```text
 /dynamic-web-builder:build-dynamic-web Build <the complete functional outcome>
@@ -50,17 +55,24 @@ The plugin is namespaced in marketplace installations. The dedicated agent is av
 @dynamic-web-builder:dynamic-web-builder
 ```
 
+Project scope writes the marketplace and enabled-plugin configuration into the target repository's `.claude/settings.json`. Commit that file so future cloud sessions load the same builder.
+
 ## C. Install after PR #3 is merged
 
-After the plugin marketplace reaches `main`:
+After the plugin marketplace reaches `main`, ask Claude to run:
+
+```bash
+claude plugin marketplace add AdrianTRUFiT/UIUX_Skills --scope project
+claude plugin install dynamic-web-builder@trufit-builders --scope project
+```
+
+Then run:
 
 ```text
-/plugin marketplace add AdrianTRUFiT/UIUX_Skills
-/plugin install dynamic-web-builder@trufit-builders --scope project
 /reload-plugins
 ```
 
-Then use:
+Use:
 
 ```text
 /dynamic-web-builder:build-dynamic-web Build <the complete functional outcome>
