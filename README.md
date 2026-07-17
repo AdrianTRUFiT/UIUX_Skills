@@ -1,64 +1,91 @@
-# UIUX Skills — Dynamic Web Builder
+# Dynamic Web Builder
 
-Governed Claude Code frontend-production toolkit for building functional, responsive websites and application pages rather than static AI mockups.
+This repository is now a governed frontend production system for Claude Code.
 
-## What this repository provides
+It combines:
 
-- **UI/UX Pro Max** — design-system, layout, typography, color, accessibility, responsive, animation, and stack guidance.
-- **21st CLI integration** — component and block discovery/generation from 21st.dev.
-- **Dynamic Web Builder skill** — the `/build-dynamic-web` end-to-end execution command.
-- **Dynamic Web Builder agent** — a dedicated Claude Code agent that implements, runs, operates, tests, fixes, commits, and pushes the requested user journey.
-- **Playwright CLI verification** — deterministic browser operation so a compile or screenshot cannot be mistaken for a functioning application.
+- UI/UX Pro Max design intelligence;
+- companion brand, design-system, styling, banner, and slide skills;
+- 21st.dev Magic MCP and CLI component access;
+- a commandable end-to-end build skill;
+- a dedicated dynamic-web-builder agent;
+- Playwright CLI browser verification;
+- Windows and Claude Code cloud installation paths.
 
-## One-time Windows installation
+## What the builder is for
 
-From a clone of this repository:
+Use the builder when the requested outcome is a working website, application page, dashboard, portal, form workflow, or interactive product surface.
+
+The builder does not treat any of the following as completion:
+
+- a static mockup;
+- a screenshot recreation;
+- a disconnected component gallery;
+- dead buttons or fake links;
+- hardcoded success behavior;
+- code that compiles but has not been operated in a browser.
+
+The required delivery loop is:
+
+```text
+Inspect → Contract → Design → Assemble → Implement → Operate → Test → Fix → Commit → Push → Human Review
+```
+
+## Windows installation
+
+From PowerShell:
 
 ```powershell
 Set-Location "D:\DEV\UIUX_Skills"
-Set-ExecutionPolicy -Scope Process Bypass
+git fetch origin
+git switch claude/dynamic-web-builder-v1
+git pull --ff-only
+Set-ExecutionPolicy -Scope Process Bypass -Force
 .\install-dynamic-web-builder.ps1
 ```
 
-The installer:
-
-1. copies the repository's Claude skills to `%USERPROFILE%\.claude\skills`;
-2. installs the `dynamic-web-builder` agent to `%USERPROFILE%\.claude\agents`;
-3. installs the current 21st CLI and Playwright CLI;
-4. installs the Playwright browser runtime;
-5. creates the `dynamic-web` launcher;
-6. adds `%USERPROFILE%\.claude\bin` to the user PATH;
-7. verifies required commands and opens 21st.dev login when needed.
-
-Open a new PowerShell window after installation.
-
-## Daily use
-
-Enter the actual product repository:
+Then enter any application repository and run:
 
 ```powershell
-Set-Location "D:\DEV\YOUR-APPLICATION"
 dynamic-web
 ```
 
-Then invoke the governed build command inside Claude Code:
+Inside Claude Code:
 
 ```text
-/build-dynamic-web Build the complete functional <website/page/journey>, including real routes, data, persistence, validation, responsive behavior, browser testing, and GitHub delivery.
+/build-dynamic-web Build <the complete functional outcome>
 ```
 
-The agent must extend the existing repository architecture, operate every delivered control through Playwright CLI, fix failures, run the project's mechanical checks, commit, push, and report the branch and commit. It must not merge without human authorization.
+## Claude Code cloud installation
 
-## Completion standard
+See [`CLOUD_INSTALL.md`](CLOUD_INSTALL.md).
 
-The work is complete only when the requested journey operates successfully in a real browser and all applicable lint, type, test, and production-build gates pass. Static mockups, disconnected component demonstrations, dead controls, fake data behavior, and unverified screenshots do not qualify.
+Until the feature branch is merged, open a target application repository in Claude Code cloud and ask Claude to run:
 
-## Key files
+```bash
+claude plugin marketplace add AdrianTRUFiT/UIUX_Skills@claude/dynamic-web-builder-v1 --scope project
+claude plugin install dynamic-web-builder@trufit-builders --scope project
+```
 
-- `.claude/skills/build-dynamic-web/SKILL.md`
-- `.claude/agents/dynamic-web-builder.md`
-- `.claude/skills/ui-ux-pro-max/SKILL.md`
-- `install-dynamic-web-builder.ps1`
-- `21ST_DEV_SETUP.md`
+Then run:
 
-This repository owns frontend assembly capability. Each product repository continues to own its product requirements, implementation, data, tests, deployment, and release decisions.
+```text
+/reload-plugins
+/dynamic-web-builder:build-dynamic-web Build <the complete functional outcome>
+```
+
+## Core assets
+
+- `.claude/skills/build-dynamic-web/SKILL.md` — completion contract and execution workflow
+- `.claude/agents/dynamic-web-builder.md` — dedicated frontend assembly agent
+- `.claude-plugin/plugin.json` — cloud/plugin package manifest
+- `.claude-plugin/marketplace.json` — TRUFiT plugin marketplace catalog
+- `install-dynamic-web-builder.ps1` — Windows personal-scope installer
+- `scripts/setup-claude-cloud.sh` — cloud prerequisite installer
+- `CLOUD_INSTALL.md` — cloud environment and plugin instructions
+
+## Delivery authority
+
+UI/UX Pro Max supplies design intelligence. 21st.dev supplies optional component discovery and generation. Playwright supplies browser operation. Claude Code remains responsible for integrating real routes, state, data, persistence, validation, loading, empty, success, error, responsive, accessibility, test, build, and GitHub delivery behavior.
+
+No branch may be merged without explicit human authorization.
