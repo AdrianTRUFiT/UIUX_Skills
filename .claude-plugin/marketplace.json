@@ -1,0 +1,14 @@
+{
+  "name": "trufit-builders",
+  "owner": {
+    "name": "Adrian TRUFiT McKenzie"
+  },
+  "plugins": [
+    {
+      "name": "dynamic-web-builder",
+      "source": "./",
+      "version": "0.1.0",
+      "description": "Commandable Claude Code frontend production system for functional dynamic websites and application pages."
+    }
+  ]
+}
