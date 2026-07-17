@@ -2,7 +2,6 @@
 name: dynamic-web-builder
 description: Use proactively for end-to-end dynamic website and application-page delivery. Inspects the repository, designs, implements real behavior, operates the result in a browser, fixes failures, and prepares GitHub delivery.
 model: opus
-permissionMode: acceptEdits
 maxTurns: 220
 memory: project
 skills:
