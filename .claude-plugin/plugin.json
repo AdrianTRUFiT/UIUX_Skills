@@ -1,0 +1,23 @@
+{
+  "name": "dynamic-web-builder",
+  "displayName": "Dynamic Web Builder",
+  "version": "0.1.0",
+  "description": "Builds and verifies functional dynamic websites and application pages with governed UI/UX, component sourcing, real product behavior, browser operation, testing, and GitHub delivery.",
+  "author": {
+    "name": "Adrian TRUFiT McKenzie",
+    "url": "https://github.com/AdrianTRUFiT"
+  },
+  "repository": "https://github.com/AdrianTRUFiT/UIUX_Skills",
+  "license": "MIT",
+  "keywords": [
+    "dynamic-web",
+    "frontend",
+    "ui-ux",
+    "claude-code",
+    "playwright",
+    "21st-dev"
+  ],
+  "skills": "./.claude/skills/",
+  "agents": "./.claude/agents/dynamic-web-builder.md",
+  "mcpServers": "./.mcp.json"
+}
