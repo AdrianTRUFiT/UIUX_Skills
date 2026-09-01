@@ -151,3 +151,16 @@ Report only after execution:
 - any genuine external dependency or blocked acceptance gate.
 
 Never describe an untested or partially working page as complete.
+## Premium Product Engineering Integration
+
+For high-end application work, mobile product refinement, substantial UX changes,
+or requests where the user expects a polished professional application rather
+than only functional implementation, also read and apply:
+
+`../premium-product-engineering/SKILL.md`
+
+The premium layer complements this builder. It does not replace this builder's
+functional completion contract, browser operation, repository verification,
+Git delivery, or human-review requirements.
+
+The target repository's own governance and architecture remain authoritative.
