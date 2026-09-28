@@ -1,14 +1,14 @@
 # Dynamic Web Builder
 
-This repository is now a governed frontend production system for Claude Code.
+This repository is a governed, executor-neutral frontend production system. Codex/Astra and Claude Code are supported execution adapters; repository contracts, skills, tests, and human approval remain authoritative.
 
 It combines:
 
 - UI/UX Pro Max design intelligence;
 - companion brand, design-system, styling, banner, and slide skills;
 - 21st.dev Magic MCP and CLI component access;
-- a commandable end-to-end build skill;
-- a dedicated dynamic-web-builder agent;
+- reusable end-to-end build skills for Codex and Claude Code;
+- provider-specific agents/adapters without making a provider the architectural authority;
 - Playwright CLI browser verification;
 - Windows and Claude Code cloud installation paths.
 
@@ -28,10 +28,14 @@ The builder does not treat any of the following as completion:
 The required delivery loop is:
 
 ```text
-Inspect → Contract → Design → Assemble → Implement → Operate → Test → Fix → Commit → Push → Human Review
+Inspect → Contract → Design → Assemble → Implement → Operate → Test → Fix → Evidence → Human Review
 ```
 
-## Windows installation
+## Codex / GPT-6 Astra
+
+Codex reads `AGENTS.md` for concise repository-wide authority and boundaries and discovers the detailed reusable workflow under `.agents/skills/build-dynamic-web/SKILL.md`. See `CODEX.md` for Codex-specific setup. This keeps always-loaded context small and loads detailed production guidance only when the task requires it.
+
+## Claude Code — Windows installation
 
 From PowerShell:
 
@@ -76,7 +80,16 @@ Then run:
 
 ## Core assets
 
-- `.claude/skills/build-dynamic-web/SKILL.md` — completion contract and execution workflow
+### Executor-neutral / Codex
+
+- `AGENTS.md` — concise repository authority, boundaries, and completion rules
+- `.agents/skills/build-dynamic-web/SKILL.md` — Codex/OpenAI-compatible reusable production workflow
+- `.mcp.json` — optional external capability configuration
+- `CODEX.md` — Codex/Astra adapter and setup guidance
+
+### Claude Code adapter
+
+- `.claude/skills/build-dynamic-web/SKILL.md` — Claude Code completion contract and execution workflow
 - `.claude/agents/dynamic-web-builder.md` — dedicated frontend assembly agent
 - `.claude-plugin/plugin.json` — cloud/plugin package manifest
 - `.claude-plugin/marketplace.json` — TRUFiT plugin marketplace catalog
@@ -86,6 +99,6 @@ Then run:
 
 ## Delivery authority
 
-UI/UX Pro Max supplies design intelligence. 21st.dev supplies optional component discovery and generation. Playwright supplies browser operation. Claude Code remains responsible for integrating real routes, state, data, persistence, validation, loading, empty, success, error, responsive, accessibility, test, build, and GitHub delivery behavior.
+UI/UX Pro Max supplies design intelligence. 21st.dev supplies optional component discovery and generation. Playwright supplies browser operation. The selected Production Agent executes the requested work and produces artifacts, tests, and evidence; it is not the architectural authority. The target repository's governance and architecture remain authoritative.
 
 No branch may be merged without explicit human authorization.
